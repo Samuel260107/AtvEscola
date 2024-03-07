@@ -10,7 +10,7 @@
 </head>
 <body>
     <Div>
-    <form action="cadastrar.php">
+    <form action="cadastrar.php" method="post">
         <input name="nome">
         <input name="curso">
 
@@ -26,6 +26,7 @@
         <h1>Sexo:</h1>
         <input type="radio" name="masc">
         <input type="radio" name="fem">
+        
         <button type="submit"></button>
     </form>
     <Div>
