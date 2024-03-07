@@ -13,8 +13,17 @@
     <form action="cadastrar.php">
         <input name="nome">
         <input name="curso">
-        <input name="rm">
-        <h1>
+
+        <select name="linguagem" required="required">
+        <option value="">Escolha uma linguagem de programação</option>
+        <option value="csharp">C#</option>
+        <option value="php">PHP</option>
+        <option value="java">Java</option>
+        <option value="javascript">JavaScript</option>
+        <option value="cpp">C++</option>
+        </select>
+        
+        <h1>Sexo:</h1>
         <input type="radio" name="masc">
         <input type="radio" name="fem">
         <button type="submit"></button>
