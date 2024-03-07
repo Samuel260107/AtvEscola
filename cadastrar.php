@@ -7,7 +7,7 @@ if(empty($_POST['nome'] || $_POST['curso'])){
 }
 $nome = mysqli_real_escape_string($conexao, trim($_POST['nome']));
 $sigla = mysqli_real_escape_string($conexao, trim($_POST['curso']));
-$nascimento = mysqli_real_escape_string($conexao, trim($_POST['datanascimento']));
+$nascimento = mysqli_real_escape_string($conexao, trim($_POST['data']));
 $sexo = mysqli_real_escape_string($conexao, trim($_POST['sexo']));
 $RM = mysqli_real_escape_string($conexao, trim($_POST['rm']));
 
@@ -21,7 +21,7 @@ if($row['total'] == 1){
     exit;
 }
 
-$sql = "INSERT INTO usuario(RM, nome, nascimento, sigla, sexo) values ('$RM', '$nome', '$nascimento', '$sigla', '$sexo', NOW())";
+$sql = "INSERT INTO aluno(RM, nome, nascimento, sigla, sexo) values ('$RM', '$nome', '$nascimento', '$sigla', '$sexo')";
 
 if($conexao->query($sql) === true){
 $_SESSION['status_cadastro'] = true;
