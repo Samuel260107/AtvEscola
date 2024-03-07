@@ -10,7 +10,7 @@
 </head>
 <body>
     <Div>
-    <form action="cadastrar.php">
+    <form action="cadastrar.php" method="post">
         <input name="nome">
         <input name="curso">
         <input name="rm">
